@@ -57,7 +57,7 @@
 
   .popup .leaflet-popup-content-wrapper{background:var(--panel);border-radius:0;border:1px solid var(--line);box-shadow:0 10px 34px rgba(27,23,18,.22)}
   .popup .leaflet-popup-tip{background:var(--panel);border:1px solid var(--line);box-shadow:none}
-  .popup .leaflet-popup-content{margin:0;width:180px!important}
+  .popup .leaflet-popup-content{margin:0;width:210px!important}
   .popup .leaflet-popup-scrolled{border:0;scrollbar-width:thin}
   .popup a.leaflet-popup-close-button{color:var(--mute);top:8px;right:8px}
 
@@ -68,7 +68,7 @@
   .card .plot{font-size:8.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mute);background:none;border-top:1px solid var(--line);border-radius:0;padding:7px 0 0;margin:8px 0 0;display:block}
   .card .bio{font-size:11.5px;line-height:1.55;color:var(--body);margin:6px 0}
   .card .extra{font-size:10px;line-height:1.5;color:var(--mute);font-style:italic;margin-top:5px}
-  .card img{width:100%;max-height:96px;object-fit:cover;object-position:top center;border-radius:0;margin:6px 0;border:1px solid var(--line);display:block}
+  .card img{width:100%;height:auto;border-radius:0;margin:6px 0;border:1px solid var(--line);display:block}
   .card .war{font-size:10.5px;line-height:1.5;color:var(--body);margin:6px 0;padding-left:9px;border-left:2px solid var(--gold)}
   .card .links{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
   .card .links a{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--golddk);text-decoration:none;border:1px solid var(--line);padding:6px 9px;border-radius:0}
@@ -98,7 +98,7 @@
   body.tracing #app{width:calc(100% - 290px)}
   body.tracing .leaflet-container{cursor:crosshair}
   .note{position:absolute;bottom:8px;left:10px;z-index:1000;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);background:rgba(245,244,240,.9);border:1px solid var(--line);padding:5px 10px;border-radius:0;pointer-events:none}
-  @media(max-width:640px){header h1{font-size:16px}.popup .leaflet-popup-content{width:160px!important}#bar{padding:10px 14px}}
+  @media(max-width:640px){header h1{font-size:16px}.popup .leaflet-popup-content{width:185px!important}#bar{padding:10px 14px}}
 </style>
 </head>
 <body>
@@ -208,7 +208,7 @@ for(const p of PEOPLE){
   const a=L.circleMarker([IMGH-p.by,p.bx],{radius:6,color:'#FFFFFF',weight:1.8,fillColor:col,fillOpacity:.96});
   const b=L.circleMarker([p.lat,p.lng],{radius:6,color:'#F5F4F0',weight:1.8,fillColor:col,fillOpacity:.95});
   for(const m of [a,b]){
-    m.bindPopup(card(p),{className:'popup',maxWidth:200,maxHeight:230,autoPanPaddingTopLeft:[14,30],autoPanPaddingBottomRight:[14,14]}).bindTooltip(p.n,{direction:'top',offset:[0,-6]});
+    m.bindPopup(card(p),{className:'popup',maxWidth:230,maxHeight:340,autoPanPaddingTopLeft:[14,30],autoPanPaddingBottomRight:[14,14]}).bindTooltip(p.n,{direction:'top',offset:[0,-6]});
     m.on('mouseover',()=>m.setStyle({radius:8.5,weight:2.5}));
     m.on('mouseout',()=>m.setStyle({radius:6,weight:1.8}));
   }
