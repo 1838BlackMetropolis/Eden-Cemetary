@@ -117,7 +117,7 @@
           <sc-for list="{{ homeNotables }}" as="n" hint-placeholder-count="3">
             <div onClick="{{ goNotables }}" style="cursor:pointer;background:#FFFFFF;border:1px solid #DDDAD0;display:flex;flex-direction:column" style-hover="border-color:#D9A821">
               <div style="height:300px;background:{{ dark }};position:relative;overflow:hidden">
-                <div role="img" aria-label="{{ n.name }}" style="width:100%;height:100%;background-image:url('{{ n.img }}');background-size:cover;background-position:top center;filter:sepia(0.15)"></div>
+                <div role="img" aria-label="{{ n.name }}" style="width:100%;height:100%;background-color:{{ n.bg }};background-image:url('{{ n.img }}');background-size:{{ n.zoom }};background-position:{{ n.pos }};background-repeat:no-repeat;filter:sepia(0.15)"></div>
                 <span style="position:absolute;bottom:0;left:0;right:0;padding:14px 20px;font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:19px;color:#FCFAF2;background:linear-gradient(to top, rgba(20,18,14,0.75), rgba(20,18,14,0))">{{ n.era }}</span>
               </div>
               <div style="padding:26px 26px 30px;display:flex;flex-direction:column;gap:10px">
@@ -205,14 +205,64 @@
             <span style="width:36px;height:1px;background:{{ gold }}"></span>
             <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">Our Story · Beginnings</span>
           </div>
-          <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(32px,7vw,54px);margin:0;line-height:1.08;text-wrap:balance">Founded so that death would not be another site of dispossession.</h1>
-          <p style="font-size:17px;line-height:1.75;color:{{ dmute }};margin:0;max-width:64ch">The creation of the Eden Cemetery Company was a collaborative act of African American agency: a sanctuary where Black Philadelphians could be buried with dignity and respect, founded by Jacob C. White Sr. and managed by his son, Jacob C. White Jr., at the height of Jim Crow — six years after Plessy v. Ferguson — in answer to a burial crisis created by segregation, urban expansion, condemnation, and the closure of the community’s earlier burial grounds.</p>
+          <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(32px,7vw,54px);margin:0;line-height:1.08;text-wrap:balance">Lebanon. Olive. Eden holds them all.</h1>
+          <p style="font-size:17px;line-height:1.75;color:{{ dmute }};margin:0;max-width:64ch">The creation of the Eden Cemetery Company was a collaborative act of African American agency: a sanctuary where Black Philadelphians could be buried with dignity and respect. Eden holds Lebanon Cemetery,&nbsp; founded by Jacob C. White Sr. and managed by his son, Jacob C. White Jr..&nbsp; Eden holds Olive Cemetery, founded by Rev. Stephen Smith.&nbsp; Eden also holds remains from the African Episcopal Church of St. Thomas, First African Baptist, Monumental Baptist, the Home for the Colored Aged and Infirm and the Association for the Care of Colored Orphans.&nbsp; &nbsp;And many more&nbsp;</p>
         </div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <div style="border:1px solid {{ dline }};background:{{ darker }};padding:12px">
-            <img src="assets/jacob-c-white-sr.jpeg" alt="Engraved portrait of Jacob C. White Sr., founder of Eden Cemetery" style="width:100%;height:380px;object-fit:cover;object-position:top;display:block">
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="border:1px solid {{ dline }};background:{{ darker }};padding:12px">
+              <img src="assets/jacob-c-white-sr.jpeg" alt="Engraved portrait of Jacob C. White Sr., founder of Lebanon Cemetery" style="width:100%;height:300px;object-fit:cover;object-position:top;display:block">
+            </div>
+            <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:{{ dsub }};line-height:1.5">Jacob C. White Sr. · Founder, Lebanon Cemetery</span>
           </div>
-          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:{{ dsub }};text-align:right">Jacob C. White Sr. · Founder</span>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="border:1px solid {{ dline }};background:{{ darker }};padding:12px">
+              <img src="assets/stephen-smith.png" alt="Portrait of Rev. Stephen Smith, founder of Olive Cemetery" style="width:100%;height:300px;object-fit:cover;object-position:top;display:block;filter:sepia(0.2)">
+            </div>
+            <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:{{ dsub }};line-height:1.5">Rev. Stephen Smith · Founder, Olive Cemetery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lebanon & Olive / reinterment -->
+    <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(32px,5vw,72px);align-items:center">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="border:1px solid #DDDAD0;background:#FFFFFF;padding:12px">
+            <img src="assets/lebanon-chapel.png" alt="Lithograph of the Chapel of the Lebanon Cemetery" style="width:100%;height:420px;object-fit:cover;display:block">
+          </div>
+          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6759;line-height:1.5">Chapel of the Lebanon Cemetery · Lithograph courtesy Historical Society of Pennsylvania</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">The Collection Cemetery</span>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1;text-wrap:balance">Founded so that death would not be another site of dispossession.</h2>
+          <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">The great Black burial grounds of Philadelphia — home to some of the most important Black Americans in history — were forced to close. Other cemeteries were not forced to move.&nbsp;</p>
+          <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">But Eden took them all in. Their residents were reinterred on Eden’s grounds, where the cemetery’s sections became declarations of pride — with sections named for important historical figures like David Bustill Bowser, Harriet Tubman, and Octavius Catto.&nbsp;&nbsp;</p>
+          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:#8A6D12;margin:0">What looks like a cemetery is actually an act of resistance — 124 years of refusing to let Black history be buried twice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders -->
+    <section style="background:{{ dark }};color:#F6F4EA;border-bottom:1px solid {{ dline }}">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
+          <div style="display:flex;align-items:center;gap:14px">
+            <span style="width:36px;height:1px;background:{{ gold }}"></span>
+            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">The Founders</span>
+          </div>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">The Eden Cemetery Company</h2>
+          <p style="font-size:16.5px;line-height:1.8;color:{{ dmute }};margin:0">Eden was founded by Jacob C. White Sr. and incorporated by a company of Philadelphians who put their names, their money, and their standing behind a burial ground the city had made impossible. John C. Asbury served as its first president.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:{{ gFounders }};gap:1px;background:{{ dline }};border:1px solid {{ dline }}">
+          <sc-for list="{{ founders }}" as="f" hint-placeholder-count="5">
+            <div style="background:{{ darker }};padding:28px 26px;display:flex;flex-direction:column;gap:8px">
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:20px;line-height:1.2;color:#F6F4EA">{{ f.name }}</span>
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:15px;color:{{ gold }}">{{ f.years }}</span>
+              <span style="display:{{ f.roleDisplay }};font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:{{ dsub }};margin-top:2px">{{ f.role }}</span>
+            </div>
+          </sc-for>
         </div>
       </div>
     </section>
@@ -229,25 +279,6 @@
               <span style="font-size:14.5px;line-height:1.7;color:#6E6759">{{ t.text }}</span>
             </div>
           </sc-for>
-        </div>
-      </div>
-    </section>
-
-    <!-- Lebanon & Olive / reinterment -->
-    <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
-      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(32px,5vw,72px);align-items:center">
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <div style="border:1px solid #DDDAD0;background:#FFFFFF;padding:12px">
-            <img src="assets/lebanon-chapel.png" alt="Lithograph of the Chapel of the Lebanon Cemetery" style="width:100%;height:420px;object-fit:cover;display:block">
-          </div>
-          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6759">Chapel of the Lebanon Cemetery · lithograph</span>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:18px">
-          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">The Collection Cemetery</span>
-          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">Lebanon. Olive. Eden held them all.</h2>
-          <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">The great Black burial grounds of Philadelphia — home to some of the most important Black Americans in history — were forced to close. Other cemeteries were not forced to move. Only theirs. Even in death, the mistreatment continued.</p>
-          <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">But Eden held them. Their residents were reinterred on Eden’s grounds, where the cemetery’s sections became declarations of pride — like the John Brown section, the chosen resting place of United States Colored Troops and of Frances Ellen Watkins Harper, who counted Brown a friend and hero.</p>
-          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:#8A6D12;margin:0">What looks like a cemetery is actually an act of resistance — 124 years of refusing to let Black history be buried twice.</p>
         </div>
       </div>
     </section>
@@ -322,29 +353,6 @@
           </sc-for>
         </div>
         <span style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6E6759">Transcriptions courtesy of the Eden Cemetery Company archives</span>
-      </div>
-    </section>
-
-    <!-- Founders -->
-    <section style="background:{{ dark }};color:#F6F4EA;border-bottom:1px solid {{ dline }}">
-      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
-        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
-          <div style="display:flex;align-items:center;gap:14px">
-            <span style="width:36px;height:1px;background:{{ gold }}"></span>
-            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">The Founders</span>
-          </div>
-          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">The Eden Cemetery Company</h2>
-          <p style="font-size:16.5px;line-height:1.8;color:{{ dmute }};margin:0">Eden was founded by Jacob C. White Sr. and incorporated by a company of Philadelphians who put their names, their money, and their standing behind a burial ground the city had made impossible. John C. Asbury served as its first president.</p>
-        </div>
-        <div style="display:grid;grid-template-columns:{{ gFounders }};gap:1px;background:{{ dline }};border:1px solid {{ dline }}">
-          <sc-for list="{{ founders }}" as="f" hint-placeholder-count="5">
-            <div style="background:{{ darker }};padding:28px 26px;display:flex;flex-direction:column;gap:8px">
-              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:20px;line-height:1.2;color:#F6F4EA">{{ f.name }}</span>
-              <span style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:15px;color:{{ gold }}">{{ f.years }}</span>
-              <span style="display:{{ f.roleDisplay }};font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:{{ dsub }};margin-top:2px">{{ f.role }}</span>
-            </div>
-          </sc-for>
-        </div>
       </div>
     </section>
 
@@ -727,6 +735,25 @@
       </div>
     </section>
 
+    <section style="background:#F5F4F0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(52px,8vw,88px) clamp(20px,5vw,40px)">
+        <div style="display:grid;grid-template-columns:{{ gCards }};gap:28px">
+          <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
+            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Preserve</span>
+            <span style="font-size:14.5px;line-height:1.7;color:#6E6759">Monument conservation, grounds care, and restoration of the historic sections reinterred from Lebanon and Olive Cemeteries.</span>
+          </div>
+          <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
+            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Educate</span>
+            <span style="font-size:14.5px;line-height:1.7;color:#6E6759">School programs, research support, and public tours that connect visitors with 93,000 stories of ordinary people who did extraordinary things.</span>
+          </div>
+          <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
+            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Sustain</span>
+            <span style="font-size:14.5px;line-height:1.7;color:#6E6759">An endowment for the next century of stewardship — so Eden can keep preserving memory and cultural continuity.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Archival records campaign -->
     <section style="background:{{ darker }};color:#F6F4EA;border-top:1px solid {{ dline }}">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(32px,5vw,72px);align-items:start">
@@ -753,22 +780,7 @@
 
     <section style="background:#F5F4F0">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(52px,8vw,88px) clamp(20px,5vw,40px)">
-        <div style="display:grid;grid-template-columns:{{ gCards }};gap:28px">
-          <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
-            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Preserve</span>
-            <span style="font-size:14.5px;line-height:1.7;color:#6E6759">Monument conservation, grounds care, and restoration of the historic sections reinterred from Lebanon and Olive Cemeteries.</span>
-          </div>
-          <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
-            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Educate</span>
-            <span style="font-size:14.5px;line-height:1.7;color:#6E6759">School programs, research support, and public tours that connect visitors with 93,000 stories of ordinary people who did extraordinary things.</span>
-          </div>
-          <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
-            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Sustain</span>
-            <span style="font-size:14.5px;line-height:1.7;color:#6E6759">An endowment for the next century of stewardship — so Eden can keep preserving memory and cultural continuity.</span>
-          </div>
-        </div>
-
-        <div style="margin-top:56px;background:{{ dark }};padding:clamp(32px,6vw,56px);display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center">
+        <div style="background:{{ dark }};padding:clamp(32px,6vw,56px);display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center">
           <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">That’s Ours. It Has Been Ours From the Beginning.</span>
           <p style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(25px,4.5vw,34px);font-weight:600;line-height:1.3;color:#F6F4EA;margin:0;max-width:30ch">Help Eden survive — so the stories it holds can teach us ways to improve our now.</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:8px">
@@ -983,7 +995,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{
   &quot;$preview&quot;: {&quot;width&quot;: 1440},
-  &quot;charcoal&quot;: {&quot;editor&quot;: &quot;color&quot;, &quot;options&quot;: [&quot;#1C1B19&quot;, &quot;#4F4F42&quot;, &quot;#686858&quot;], &quot;default&quot;: &quot;#1C1B19&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Brand&quot;},
+  &quot;charcoal&quot;: {&quot;editor&quot;: &quot;color&quot;, &quot;options&quot;: [&quot;#1C1B19&quot;, &quot;#26241F&quot;, &quot;#302E28&quot;, &quot;#3C3A32&quot;, &quot;#4F4F42&quot;, &quot;#686858&quot;], &quot;default&quot;: &quot;#1C1B19&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Brand&quot;},
   &quot;gold&quot;: {&quot;editor&quot;: &quot;color&quot;, &quot;options&quot;: [&quot;#EFC94C&quot;, &quot;#D9A821&quot;, &quot;#B5891A&quot;], &quot;default&quot;: &quot;#EFC94C&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Brand&quot;},
   &quot;showFriends&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Pages&quot;}
 }">
@@ -1144,6 +1156,9 @@ class Component extends DCLogic {
     const shades = {
       '#686858': { darker: '#585849', line: '#7C7C6A', mute: '#E2E0D0', sub: '#C4C2AE' },
       '#4F4F42': { darker: '#424237', line: '#666655', mute: '#D4D2BF', sub: '#B2B09C' },
+      '#3C3A32': { darker: '#302E28', line: '#54514A', mute: '#D2CFC5', sub: '#A8A497' },
+      '#302E28': { darker: '#26241F', line: '#48463F', mute: '#D0CDC3', sub: '#A19D90' },
+      '#26241F': { darker: '#1C1B19', line: '#3F3D36', mute: '#CFCCC4', sub: '#9C988C' },
       '#1C1B19': { darker: '#131211', line: '#3A3833', mute: '#CFCCC4', sub: '#99968E' },
     };
     const s = shades[charcoal] || shades['#686858'];
@@ -1357,11 +1372,11 @@ class Component extends DCLogic {
       ],
 
       homeNotables: [
-        { name: 'Marian Anderson', era: '1897 – 1993', tag: 'Musicians & Performers', img: 'assets/marian-anderson.jpg',
+        { name: 'Marian Anderson', era: '1897 – 1993', tag: 'Musicians & Performers', img: 'assets/marian-anderson.jpg', zoom: '100% auto', pos: 'center 30px', bg: '#EEEEEE',
           blurb: 'The contralto whose 1939 Lincoln Memorial concert became a landmark of the civil rights movement.' },
-        { name: 'Octavius V. Catto', era: '1839 – 1871', tag: 'Civic Leaders', img: 'assets/octavius-catto.jpg',
+        { name: 'Octavius V. Catto', era: '1839 – 1871', tag: 'Civic Leaders', img: 'assets/octavius-catto.jpg', zoom: 'cover', pos: 'center 7%', bg: charcoal,
           blurb: 'Educator and voting-rights martyr, assassinated on Election Day 1871 — a century before Selma.' },
-        { name: 'William Still', era: '1821 – 1902', tag: 'Abolitionists', img: 'assets/william-still.jpg',
+        { name: 'William Still', era: '1821 – 1902', tag: 'Abolitionists', img: 'assets/william-still-portrait.jpg', zoom: 'cover', pos: 'center 2%', bg: '#E9E7E1',
           blurb: 'The Father of the Underground Railroad, who documented every freedom seeker he helped escape.' },
       ],
 
