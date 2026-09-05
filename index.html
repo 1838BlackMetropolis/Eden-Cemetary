@@ -11,7 +11,7 @@
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
 <script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
 <style>
   html,body{margin:0;padding:0;background:#686858;}
@@ -311,7 +311,7 @@
       <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(32px,5vw,72px);align-items:start">
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="border:1px solid #DDDAD0;background:#FFFFFF;padding:12px">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="celestine-cromwell" shape="rect" placeholder="Celestine Cromwell" hint-size="100%,420px"></x-import>
+            <img src="assets/celestine-cromwell-grave.jpeg" alt="The Cromwell family headstone at Eden Cemetery, marking Celestine Cromwell's grave" style="width:100%;height:420px;object-fit:cover;object-position:center;display:block">
           </div>
           <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6759">Celestine Cromwell · 1854–1902 · Eden’s first burial</span>
         </div>
@@ -396,7 +396,7 @@
       <div style="max-width:1280px;margin:0 auto;padding:clamp(52px,8vw,88px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(32px,5vw,72px);align-items:center">
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="height:460px;border:1px solid #DDDAD0;background:#FFFFFF;padding:12px">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="anderson-grave" shape="rect" placeholder="Marian Anderson grave photo" hint-size="100%,434px"></x-import>
+            <img src="assets/marian-anderson-grave.jpeg" alt="The Anderson–DePreist family headstone at Eden Cemetery, marking Marian Anderson's grave" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block">
           </div>
           <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6759">Her grave at Eden · Section &amp; lot on the grounds map</span>
         </div>
@@ -763,16 +763,22 @@
           <p style="font-size:16.5px;line-height:1.8;color:{{ dmute }};margin:0">Eden’s records hold the burials of this 53‑acre site since 1902 — and the records of the dislocated 18th and 19th century African American burial grounds Eden received. Decades of use and imperfect storage have taken their toll.</p>
           <p style="font-size:16.5px;line-height:1.8;color:{{ dmute }};margin:0">Protecting them means safe housing and secure storage. Preserving them means stabilization and conservation, then digitization, transcription, and entry into a records management system — so they can be searched, studied, and used without further damage.</p>
           <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:{{ gold }};margin:0">Protecting these records keeps the lived stories of people and communities from vanishing.</p>
+          <figure style="margin:28px 0 0;padding:32px 0 0;border-top:1px solid {{ dline }};display:flex;flex-direction:column;gap:18px">
+            <blockquote style="margin:0;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(24px,3vw,34px);line-height:1.35;color:#F6F4EA;text-wrap:pretty">&ldquo;Cemeteries&hellip; are more than places of burial. They are an archive of human experience &mdash; and for many Black Americans, the way genealogy becomes possible at all.&rdquo;</blockquote>
+            <figcaption style="font-size:13px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:{{ gold }}">&mdash; Dr. Henry Louis Gates Jr.</figcaption>
+          </figure>
         </div>
         <div style="display:flex;flex-direction:column;gap:20px">
-          <div style="border:1px solid {{ dline }};background:{{ dark }};padding:34px 32px;display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="border:1px solid {{ dline }};background:{{ dark }};padding:12px">
+              <img src="assets/archive-ledgers.jpg" alt="Shelves of Eden Cemetery's original section and interment ledgers, their spines patched with tape and hand-lettered labels" style="width:100%;height:340px;object-fit:cover;object-position:center;display:block">
+            </div>
+            <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:{{ dsub }};line-height:1.5">Section books and interment ledgers · Eden Cemetery archive</span>
+          </div>
+          <div style="border:1px solid {{ dline }};background:{{ dark }};padding:34px 32px;display:flex;flex-direction:column;justify-content:center;gap:14px;height:366px;box-sizing:border-box">
             <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ dsub }}">Current ask</span>
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(40px,8vw,64px);line-height:1;color:{{ gold }}">$75,000</span>
             <span style="font-size:15px;line-height:1.7;color:{{ dmute }}">toward conservation, digitization, and preservation of Eden’s records — part of a $250,000 Phase One archival preservation effort.</span>
-          </div>
-          <div style="border:1px solid {{ dline }};padding:30px 32px;display:flex;flex-direction:column;gap:12px">
-            <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ gold }}">“Unforgettable”</span>
-            <span style="font-size:15px;line-height:1.75;color:{{ dmute }}">Dr. Henry Louis Gates Jr. — a descendant of Octavius V. Catto — on Eden and its Archival Records Project: cemeteries, he says, are more than places of burial. They are an archive of human experience, and for many Black Americans they are the way genealogy becomes possible at all.</span>
           </div>
         </div>
       </div>
@@ -847,7 +853,7 @@
           <sc-for list="{{ memorialTypes }}" as="m" hint-placeholder-count="3">
             <div style="background:#FFFFFF;border:1px solid #DDDAD0;display:flex;flex-direction:column">
               <div style="height:280px;padding:10px">
-                <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ m.slot }}" shape="rect" placeholder="{{ m.ph }}" hint-size="100%,260px"></x-import>
+                <img src="{{ m.img }}" alt="{{ m.ph }}" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block">
               </div>
               <div style="padding:22px 26px 30px;display:flex;flex-direction:column;gap:10px">
                 <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:24px;line-height:1.15">{{ m.title }}</span>
@@ -1427,11 +1433,11 @@ class Component extends DCLogic {
       ],
 
       memorialTypes: [
-        { title: 'Monuments', slot: 'mem-monuments', ph: 'Monument',
+        { title: 'Monuments', slot: 'mem-monuments', ph: 'Monument', img: 'assets/memorial-monuments.png',
           blurb: 'A range of designs, colors, and sizes, with prices to fit every budget. In-home consultations available.' },
-        { title: 'Headstones', slot: 'mem-headstones', ph: 'Headstone',
+        { title: 'Headstones', slot: 'mem-headstones', ph: 'Headstone', img: 'assets/memorial-headstones.png',
           blurb: 'Flat, beveled, slanted in two sizes, slanted with base, and uprights in two sizes.' },
-        { title: 'Custom designs', slot: 'mem-custom', ph: 'Custom memorial',
+        { title: 'Custom designs', slot: 'mem-custom', ph: 'Custom memorial', img: 'assets/memorial-custom.png',
           blurb: 'Etchings, porcelain photographs, inscriptions, bronze plaques, artwork, additional lettering, and colored granite.' },
       ],
 
