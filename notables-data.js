@@ -20,7 +20,7 @@ export const NOTABLES = [
   "lot": "938",
   "bio": "Architect, artist; founder and dean, Howard University School of Architecture and City Planning",
   "mil": "",
-  "link": "https://www.philadelphiabuildings.org/pab/app/ar_display.cfm/23563",
+  "link": "https://en.wikipedia.org/wiki/Howard_Hamilton_Mackey",
   "img": ""
  },
  {
@@ -261,7 +261,7 @@ export const NOTABLES = [
   "bio": "Founder, Mt. Sinai Holy Church of America Inc.",
   "mil": "",
   "link": "https://en.wikipedia.org/wiki/Ida_B._Robinson",
-  "img": ""
+  "img": "https://images.findagrave.com/photos/2022/52/169131040_db6ea14c-b3a1-438d-9307-679c41e5e811.jpeg"
  },
  {
   "name": "Bishop Richard R. Wright",
@@ -272,7 +272,7 @@ export const NOTABLES = [
   "lot": "195",
   "bio": "Sociologist; president of Wilberforce University; bishop, AME Church; first African American PhD from the University of Pennsylvania",
   "mil": "",
-  "link": "https://blackpast.org/african-american-history/richard-robert-wright-jr-1878-1967/",
+  "link": "https://en.wikipedia.org/wiki/Richard_R._Wright",
   "img": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Richard_Robert_Wright%2C_Jr.jpg"
  },
  {
@@ -297,7 +297,7 @@ export const NOTABLES = [
   "bio": "Social worker; a founder of Zeta Phi Beta Sorority",
   "mil": "",
   "link": "https://en.wikipedia.org/wiki/Arizona_Cleaver_Stemons",
-  "img": ""
+  "img": "https://zphib1920.org/wp-content/uploads/2021/03/arizona-cleaver-stemons.png"
  },
  {
   "name": "Nellie Rathbone Bright",
@@ -336,28 +336,16 @@ export const NOTABLES = [
   "img": "https://upload.wikimedia.org/wikipedia/commons/f/f4/John_T._Gibson_Standard_Theatre_Philadelphia_PA_%281919%29.jpg"
  },
  {
-  "name": "Cassey Family",
-  "hon": "",
-  "dates": "d. ",
-  "type": "Family",
-  "section": "Lebanon",
-  "lot": "492",
-  "bio": "Also listed: (Lebanon Cemetery) (Merion Memorial Park); right edge of location text cut off in scan",
-  "mil": "",
-  "link": "https://en.wikipedia.org/wiki/Joseph_Cassey",
-  "img": ""
- },
- {
   "name": "Bascom Family",
   "hon": "",
   "dates": "d. ",
   "type": "Family",
   "section": "Lebanon",
   "lot": "335",
-  "bio": "Also buried elsewhere: (Lebanon Cemetery) (Merion Memorial Park)",
+  "bio": "Warley Bascom created one of the longest-running furniture businesses in Philadelphia, stretching from 1861 to 1974. Bascom was an original founder of Howard University. Also buried elsewhere: (Lebanon Cemetery) (Merion Memorial Park)",
   "mil": "",
   "link": "https://www.facebook.com/philafund/posts/on-this-final-day-of-black-history-month-our-philafact-remembers-warley-bascom-s/2282823428627460/",
-  "img": "https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/52355797_2282823405294129_4370034498176286720_n.jpg?stp=dst-jpg_tt6&cstp=mx970x725&ctp=s970x725&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zY65Wm-scswQ7kNvwHaqcON&_nc_oc=AdphMP8bj-2jA6o5plDP-AUa5zCabzFFInKcL4lCWOHEAU-JY0k6rSj6Pn7WWcBG1cA&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=A4d_5J6cQPZOgrqNUHrMEA&_nc_ss=7b289&oh=00_AQHn9-GQ3jXbWGDt6IpxUXMANtLInptu-Nyq6ro9_P6bmQ&oe=6A95897C"
+  "img": "assets/bascom-family.png"
  },
  {
   "name": "Bowers Family",
@@ -366,10 +354,10 @@ export const NOTABLES = [
   "type": "Family",
   "section": "Lebanon",
   "lot": "185",
-  "bio": "Also lot(s): 186. Also buried elsewhere: (Lebanon Cemetery)",
+  "bio": "Notable Philadelphia family including patriarch John C. Bowers, opera singer Thomas Bowers, and Henrietta Bowers Duterte. Eden has named a section after him. Also lot(s): 186. Also buried elsewhere: (Lebanon Cemetery)",
   "mil": "",
-  "link": "",
-  "img": ""
+  "link": "https://en.wikipedia.org/wiki/John_C._Bowers",
+  "img": "https://en.wikipedia.org/wiki/Special:Redirect/file/John_C_Bowers_Grand_Master_Odd_Fellows_1870.jpg"
  },
  {
   "name": "Venning Family",
@@ -378,10 +366,10 @@ export const NOTABLES = [
   "type": "Family",
   "section": "Lebanon",
   "lot": "21",
-  "bio": "Associated surnames: Codgell, Sanders, Stevens. Also lot(s): 22, 58, 59; (Lebanon)",
+  "bio": "Influential Philadelphia family. Family patriarch Richard Venning graduated from the Institute for Colored Youth, class of 1867. Associated surnames: Codgell, Sanders, Stevens. Also lot(s): 22, 58, 59; (Lebanon)",
   "mil": "",
-  "link": "",
-  "img": ""
+  "link": "https://digital.librarycompany.org/islandora/object/digitool%3A130758",
+  "img": "assets/venning-family.jpg"
  },
  {
   "name": "Mount Olive Lodge",
@@ -426,7 +414,7 @@ export const NOTABLES = [
   "type": "Historian",
   "section": "John C. Bowers",
   "lot": "393",
-  "bio": "Artist, bibliophile, public historian",
+  "bio": "Artist, bibliophile, public historian, son of caterer Thomas Dorsey",
   "mil": "",
   "link": "https://en.wikipedia.org/wiki/William_Henry_Dorsey",
   "img": "https://upload.wikimedia.org/wikipedia/commons/b/b6/William_Henry_Dorsey.jpg"
@@ -440,7 +428,7 @@ export const NOTABLES = [
   "lot": "250",
   "bio": "Last member of the American Negro Historical Society. Donated the collection to the Historical Society of Pennsylvania. This collection includes the Jacob C. White Sr. papers, and the founding documents of Lebanon Cemetary.",
   "mil": "",
-  "link": "https://drive.google.com/drive/u/0/search?q=leon%20gardiner",
+  "link": "https://www2.hsp.org/collections/manuscripts/g/Gardiner0008.html",
   "img": ""
  },
  {
@@ -452,8 +440,8 @@ export const NOTABLES = [
   "lot": "138",
   "bio": "First burial at Eden Cemetery",
   "mil": "",
-  "link": "",
-  "img": ""
+  "link": "https://www.findagrave.com/memorial/37541812/celestine-cromwell",
+  "img": "https://images.findagrave.com/photos/2014/271/37541812_1412045762.jpg"
  },
  {
   "name": "William Dressen",
@@ -476,7 +464,7 @@ export const NOTABLES = [
   "lot": "72",
   "bio": "A founder of the National Association of Black Journalists",
   "mil": "",
-  "link": "https://www.phillytrib.com/news/tombstone-dedication-for-nabj-founder-bryant/article_bc34105b-45dc-5b5e-a721-faff3ce707c9.html",
+  "link": "https://nabjonline.org/about/history/founders-3/",
   "img": ""
  },
  {
@@ -488,7 +476,7 @@ export const NOTABLES = [
   "lot": "428",
   "bio": "Editor, equal-rights leader, journalist, orator, writer; a founder of the National Afro-American League",
   "mil": "",
-  "link": "https://en.wikipedia.org/wiki/Timothy_Thomas_Fortune",
+  "link": "https://en.wikipedia.org/wiki/T._Thomas_Fortune",
   "img": "https://upload.wikimedia.org/wikipedia/commons/9/97/T._Thomas_Fortune.jpg"
  },
  {
@@ -584,7 +572,7 @@ export const NOTABLES = [
   "lot": "24",
   "bio": "A founder of Sigma Pi Phi Fraternity and of St. Albans Lodge No. 35; first African American graduate of Harvard Medical School",
   "mil": "",
-  "link": "https://blackpast.org/african-american-history/edwin-clarence-joseph-turpin-howard-1846-1912/",
+  "link": "https://en.wikipedia.org/wiki/Edwin_C._J._T._Howard",
   "img": "https://upload.wikimedia.org/wikipedia/commons/6/60/Edwin_Clarence_Howard_%281846%E2%80%931912%29.png"
  },
  {
@@ -596,8 +584,8 @@ export const NOTABLES = [
   "lot": "810",
   "bio": "A founder of The Pyramid Club; physician",
   "mil": "",
-  "link": "https://blackpast.org/african-american-history/jerrick-walter-fitzgerald-m-d-1894-1953/",
-  "img": ""
+  "link": "https://www.findagrave.com/memorial/146390160/walter-fitzgerald-jerrick",
+  "img": "https://images.findagrave.com/photos/2024/257/146390160_5d622d1c-2bcb-4fea-a890-eadedcc95145.png"
  },
  {
   "name": "Nathan Francis Mossell",
@@ -618,7 +606,7 @@ export const NOTABLES = [
   "type": "Military",
   "section": "Lebanon",
   "lot": "19",
-  "bio": "Chaplain, ome fo the three Jeramiah's at Shiloh, Good friend of Elizabeth Taylor Greenfield",
+  "bio": "Chaplain, 6th Regiment United States Colored Troops",
   "mil": "Civil War · Chaplain · 6th Regt US Col'd Inf",
   "link": "https://en.wikipedia.org/wiki/Jeremiah_Asher",
   "img": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Jeremiah_Asher.jpg"
@@ -710,11 +698,11 @@ export const NOTABLES = [
  {
   "name": "Elizabeth Montier",
   "hon": "",
-  "dates": "d. 1906",
+  "dates": "1820–1858",
   "type": "Revolutionary Era",
   "section": "Lebanon",
   "lot": "105",
-  "bio": "Paul Robeson Ancestor. We have portraits",
+  "bio": "Wealthy wife of bootmaker Hiram Montier. Ancestor of Paul Robeson",
   "mil": "",
   "link": "https://www.philamuseum.org/exhibitions/the-montiers-of-philadelphia",
   "img": "https://assets.philamuseum.org/images/r7hgx2l2/production/6be476d8e38b5f310442f2c9b577cca7379b07d7-438x550.jpg?w=1024&fit=max&auto=format"
@@ -722,11 +710,11 @@ export const NOTABLES = [
  {
   "name": "Hiram Charles Montier",
   "hon": "",
-  "dates": "d. 1905",
+  "dates": "1818–1905",
   "type": "Revolutionary Era",
   "section": "Lebanon",
   "lot": "105",
-  "bio": "Paul Robeson Ancestor",
+  "bio": "Wealthy boottmaker. Ancestor of Paul Robeson",
   "mil": "",
   "link": "https://www.philamuseum.org/exhibitions/the-montiers-of-philadelphia",
   "img": "https://assets.philamuseum.org/images/r7hgx2l2/production/63267df519fcda89e7522065cca2749e2cb3d689-438x550.jpg?w=1024&fit=max&auto=format"
@@ -738,7 +726,7 @@ export const NOTABLES = [
   "type": "Revolutionary Era",
   "section": "Lebanon",
   "lot": "316",
-  "bio": "Patriot, American Revolutionary War",
+  "bio": "Patriot, American Revolutionary War, feed troops at Valley Forge",
   "mil": "",
   "link": "https://en.wikipedia.org/wiki/Hannah_Archer_Till",
   "img": ""
@@ -764,7 +752,7 @@ export const NOTABLES = [
   "lot": "298",
   "bio": "Also lot(s): 299, 300, 301",
   "mil": "",
-  "link": "",
+  "link": "https://blackgenealogy.domains.swarthmore.edu/acco/",
   "img": ""
  },
  {
@@ -788,8 +776,8 @@ export const NOTABLES = [
   "lot": "18",
   "bio": "Boxer, \"Pennsylvania's Terror\"",
   "mil": "",
-  "link": "https://boxrec.com/wiki/index.php/George_Cole",
-  "img": ""
+  "link": "https://www.njboxinghof.org/george-cole/",
+  "img": "https://www.njboxinghof.org/wp-content/uploads/2024/12/2024BIOS-Cole-scaled.jpg"
  },
  {
   "name": "John Mott Drew",
@@ -800,7 +788,7 @@ export const NOTABLES = [
   "lot": "1170",
   "bio": "Owner of a bus company and the Hilldale baseball team",
   "mil": "",
-  "link": "https://www.newspapers.com/article/philadelphia-daily-news-john-mott-drew-s/42175343/?locale=en-US",
+  "link": "https://en.wikipedia.org/wiki/John_Drew_(baseball)",
   "img": ""
  },
  {
@@ -846,7 +834,7 @@ export const NOTABLES = [
   "type": "Underground Railroad",
   "section": "Lebanon",
   "lot": "653",
-  "bio": "Underground Railroad leader. Also lot(s): 654. Also listed: (Lebanon)",
+  "bio": "Underground Railroad and commumity leader. Also lot(s): 654. Also listed: (Lebanon)",
   "mil": "",
   "link": "https://en.wikipedia.org/wiki/Nathaniel_W._Depee",
   "img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Nathaniel_W._Depee%2C_1872.png"
@@ -858,7 +846,7 @@ export const NOTABLES = [
   "type": "Underground Railroad",
   "section": "Lebanon",
   "lot": "727",
-  "bio": "Mother of Sarah Mapps",
+  "bio": "Abolishionist, educator and mother of Sarah Mapps Douglass, educator",
   "mil": "",
   "link": "https://en.wikipedia.org/wiki/Grace_A._Mapps",
   "img": ""
@@ -882,10 +870,10 @@ export const NOTABLES = [
   "type": "Underground Railroad",
   "section": "Celestine",
   "lot": "1023",
-  "bio": "Abolitionist; lumber and real estate magnate",
+  "bio": "Prominent and important 19th Century Black leader. Underground Railroad Director; Founder of Olive Cemetary. lumber and real estate magnate",
   "mil": "",
-  "link": "https://coloredconventions.org/black-mobility/delegates/stephen-smith/",
-  "img": ""
+  "link": "https://en.wikipedia.org/wiki/Stephen_Smith_(abolitionist)",
+  "img": "https://upload.wikimedia.org/wikipedia/commons/6/66/Rev._Stephen_Smith%2C_Underground_Railroad_leader.jpg"
  },
  {
   "name": "William Still",
